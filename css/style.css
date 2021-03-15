@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+:root{
+    --size-nav: 7vh;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*----------------- Header -------------------*/
+
+html header{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fafafa;
+    height: var(--size-nav);
+    vertical-align: middle;
+}
+
+html header nav{
+    text-align: right;
+    float: right;
+    font-size: 0;
+}
+
+html header nav ul li{
+    display: inline-block;
+    font-size: 1.6rem;
+}
+
+
+html header nav ul li a{
+    display: flex;
+    background-color: var(--background-color);
+    padding: calc(( 7vh - 2.2rem)/2) 1rem;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+html header nav ul li:last-child a{
+    background-color: #952218;
+    color: #fafafa;
+}
+
+
+html header h1{
+    display: inline-block;
+    vertical-align: 0.5vh;
+    color: #4e4e4e;
+
+}
+
+html header img{
+    margin-top: calc(( 7vh - 3.4vh)/2);
+    margin-left: 1rem;
+    height: 3.4vh;
+}
+
+/*----------------- Main -------------------*/
+
+main{
+    background-image: url(../asset/home-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 37vh 0;
+}
+
+main h2, main p a{
+    margin-left: 10rem;
+}
+
+main h2{
+    color: #fafafa;
+    font-size: 5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    max-width: 60rem;
+}
+section p a{
+    background-color: #952218;
+    color: #fafafa;
+    display: inline-block;
+    padding: 3rem 4rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+/*----------------- Footer -------------------*/
+
+
+
+footer h3, footer p{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    margin: 5rem auto;
+    width: 40rem;
+}
+
+footer h3{
+    padding-top: 7rem;
+}
+
+
+footer p{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+footer fieldset{
+    max-width: 70rem;
+    margin:0 auto;
+    margin-bottom: 22rem;
+    border-radius: 2rem;
+    border: solid 0.1rem;
+    padding: 3rem;
+}
+
+ fieldset form input, fieldset form label{
+    display:block;
+    width: 100%;
+    resize: none;
+    padding-bottom: 1rem;
+}
+ fieldset form input{
+    line-height: 3.5rem;
+    background-color: rgba(0, 0, 0, 0.05);
+    border:solid 0.1rem transparent;
+    border-bottom-color: #ccc;
+    margin-bottom: 1.0rem;
+}
+fieldset form input[type="submit"]:focus{
+    box-shadow: 0 0 0;
+}
+fieldset form input:focus{
+    box-shadow: 0 0 2.5rem #952218;
+    transition-duration: 1s;
+}
+ fieldset form input[type="submit"]{
+    width: 30rem;
+    margin: 0 auto;
+    padding: .9rem;
+    text-transform: uppercase;
+    margin-top: 1.5rem;
+    color: #fafafa;
+    background-color: #1a73e8;
+    cursor: pointer; 
+}
+
+
+/*----------------- Arrow -------------------*/
+
+.fleche a img{
+    background-color: #952218;
+    width: 3rem;
+    height: 3rem;
+    padding: .7rem;
+    border-radius: 50%;
+    box-shadow: 0 .5rem 1rem 0 rgba(0, 0, 0, 0.7);
+}
+.fleche{
+    display: block;
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 1rem;
+    z-index: 1;
+    text-align: right;
+    margin-right: 1rem;
+}
