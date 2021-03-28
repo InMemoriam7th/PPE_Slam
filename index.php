@@ -1,25 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gmail</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+<?php
+include_once("./src/header.inc.php");
+?>
 <body>
-    <header>
-        <img src="./asset/mail.png" alt="logo">
-        <h1>Gmail</h1>
-        <nav>
-            <ul>
-                <li><a href="">POUR LES PROS</a></li>
-                <li><a href="">CONNEXION</a></li>
-                <li><a href="">CREER UN COMPTE</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php
+    include_once("./src/nav.inc.php");
+    ?>
     <main>
         <section>
             <h2>Retrouvez la fluidité et la simplicité de Gmail sur tous vos appareils</h2>
@@ -32,15 +17,15 @@
             <p>Avec les nouveaux onglets personnalisables, repérez immédiatement les nouveaux messages et choisissez ceux que vous souhaitez lire en priorité</p>
                 <fieldset>
                     <legend>Créer un compte</legend>
-                    <form action="" method="post">
+                    <form action="./src/bbd_create_account.inc.php" method="post">
                     <label for="nom">Nom *</label>
-                        <input type="text" name="titre" id="nom" placeholder="Votre Nom">
+                        <input type="text" name="nom" id="nom" placeholder="Votre Nom">
                         <label for="prenom">Prénom *</label>
-                        <input type="text" name="contenu" id="prenom" placeholder="Votre Prénom">
+                        <input type="text" name="prenom" id="prenom" placeholder="Votre Prénom">
                         <label for="mail">Mail *</label>
                         <input type="text" name="mail" id="mail" placeholder="Votre Mail" aria-required="true">
                         <label for="pwd">Choisir votre mot de passe *</label>
-                        <input type="password" name="pwd" id="pwd" placeholder="Votre Mot de passe">
+                        <input type="password" name="password" id="password" placeholder="Votre Mot de passe">
                         <input type="submit" value="Validez votre compte">
                         <p></p>
                     </form>
