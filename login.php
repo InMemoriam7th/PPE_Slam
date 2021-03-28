@@ -1,9 +1,9 @@
 <?php
-include_once();
+include_once("./src/header.inc.php");
 ?>
 <body>
     <?php
-    include_once();
+    include_once("./src/nav.inc.php");
     ?>
     <footer>
         <section>
